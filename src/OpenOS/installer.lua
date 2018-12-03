@@ -3,8 +3,8 @@ local colors = require("colors")
 local component = require("component")
 local gpu = component.gpu;
 
-gpu.setBackground(colors.blue);
-gpu.setForeground(colors.yellow);
+gpu.setBackground(0x0000CC);
+gpu.setForeground(0xFFFF33);
 
 print("Запускаю установщик КуМир...");
 
