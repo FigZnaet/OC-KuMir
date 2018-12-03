@@ -82,3 +82,9 @@ local syntax = {
     lor = " или "
   }
 }
+
+local arr = {"П","р","и","в","е","т",","," ","К","у","М","и","р","!"};
+for pos, value in ipairs(arr) do
+  term.write(value);
+  os.sleep(1);
+end
