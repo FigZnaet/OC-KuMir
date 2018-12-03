@@ -6,7 +6,7 @@ local term = require("term")
 gpu.setBackground(0x0000CC);
 gpu.setForeground(0xFFFF33);
 
-term.write("Запускаю установщик КуМир...");
+term.write("Запускаю установщик КуМир...\n\n");
 
 local url = "https://raw.githubusercontent.com/Vladg24YT/OC-KuMir/master/src/OpenOS/";
 
