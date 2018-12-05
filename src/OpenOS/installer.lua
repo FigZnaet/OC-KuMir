@@ -24,10 +24,10 @@ local tutorials = {
 }
 local examples = {
   fsK = "/KuMir/examples/standard/FirstEx.kum",
-  fsF = "/KuMir/examples/standard/FirstEx.fl",
+  fsF = "/KuMir/examples/standard/FirstEx.fil",
   --[Robot]
   frK = "/KuMir/examples/robot/FirstEx.kum",
-  frF = "/KuMir/examples/robot/FirstEx.fl",
+  frF = "/KuMir/examples/robot/FirstEx.fil",
 }
 
 term.write("\n\nУстанавливаю Систему программирования КуМир...\n\n");
