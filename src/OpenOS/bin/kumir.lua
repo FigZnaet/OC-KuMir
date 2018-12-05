@@ -2,7 +2,7 @@ local term = require("term")
 local component = require("component")
 local gpu = component.gpu
 
-if not term.isAvaivible() then
+if not term.isAvailable() then
   print("Library TERM API is not avavible. Exit...");
   return;
 elseif gpu == nil then
