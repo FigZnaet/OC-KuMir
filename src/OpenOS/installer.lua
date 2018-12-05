@@ -32,5 +32,8 @@ local examples = {
 
 for i, value in ipairs(files) do
   term.write(url..value.." -> "..value);
+  if not fs.exists(fs.path(value)) or not fs.isDirectory(fs.path(value0)) then
+    fs.makeDirectory(fs.path(value));
+  end
   loadfile("/bin/wget.lua")(url..value,value,"-f");
 end
