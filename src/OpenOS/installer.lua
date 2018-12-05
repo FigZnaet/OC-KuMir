@@ -17,18 +17,18 @@ local files = {
   waterLib = "/lib/KWater.lua",
   drawerLib = "/lib/KDrawer.lua",
   painterLib = "/lib/KPainter.lua",
-  turnerLib = "/lib/KTurner.lua"
-};
+  turnerLib = "/lib/KTurner.lua",
+}
 local tutorials = {
-  firstLaunch = "/KuMir/tutorials/FirstLaunch.txt" 
-};
+  firstLaunch = "/KuMir/tutorials/FirstLaunch.txt",
+}
 local examples = {
   fsK = "/KuMir/examples/standard/FirstEx.kum",
   fsF = "/KuMir/examples/standard/FirstEx.fl",
   --[Robot]
   frK = "/KuMir/examples/robot/FirstEx.kum",
-  frF = "/KuMir/examples/robot/FirstEx.fl"
-};
+  frF = "/KuMir/examples/robot/FirstEx.fl",
+}
 
 term.write("\n\nУстанавливаю Систему программирования КуМир...\n\n");
 for key, value in pairs(files) do
