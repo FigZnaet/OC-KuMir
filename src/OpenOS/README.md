@@ -1,1 +1,1 @@
-### KuMir compiler for OpenOS
+### Компилятор КуМир'а для OpenOS
