@@ -4,6 +4,7 @@ local gpu = component.gpu;
 local term = require("term")
 
 gpu.setForeground(0xFFFF33);
+gpu.setBackground(0x000000);
 
 term.write("\n\nЗапускаю установщик КуМир...\n\n");
 
