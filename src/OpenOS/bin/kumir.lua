@@ -12,7 +12,7 @@ end
 local arr = {"П","р","и","в","е","т",","," ","К","у","М","и","р","!"};
 for pos, value in ipairs(arr) do
   term.write(value);
-  os.sleep(1);
+  os.sleep(0.1);
 end
 
 local w,h = gpu.getResolution();
