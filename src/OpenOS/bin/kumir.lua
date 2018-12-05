@@ -19,7 +19,8 @@ local w,h = gpu.getResolution();
 
 gpu.setBackground(0xFFFFFF);
 gpu.setForeground(0x000000);
-gpu.fill(0, 0, w, h, " ");
+gpu.fill(1, 1, w, h, " ");
+term.clear();
 term.write("Выберите версию КуМир\'а для запуска:");
 
 gpu.setBackground(0x000099);
