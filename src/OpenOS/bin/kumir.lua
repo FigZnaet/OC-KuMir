@@ -14,3 +14,40 @@ for pos, value in ipairs(arr) do
   term.write(value);
   os.sleep(1);
 end
+
+local w,h = gpu.getResolution();
+
+gpu.setBackground(0xFFFFFF);
+gpu.setForeground(0x000000);
+gpu.set(0, 0, w, h, " ");
+term.write("Выберите версию КуМир\'а для запуска:");
+
+gpu.setBackground(0x000099);
+gpu.setForeground(0xFFFF00);
+gpu.set(0, 0, w, h, " ");
+term.write("\n1.)КуМир-Стандарт");
+gpu.setBackground(0xFF4C4C);
+gpu.set(0, 0, w, h, " ");
+term.write("\n2.)КуМир для Старшеклассников");
+gpu.setBackground(0x006600);
+gpu.set(0, 0, w, h, " ");
+term.write("\n3.)КуМир-Про");
+gpu.setBackground(0xFF0000);
+gpu.set(0, 0, w, h, " ");
+term.write("\n4.)КуМир для учителей");
+gpu.setBackground(0xFFFFFF);
+gpu.setForeground(0x000000);
+gpu.set(0, 0, w, h, " ");
+term.write("\n0.) Выход");
+
+if term.read()==1 then
+  dofile("/KuMir/bin/kumir-classic.lua");
+elseif term.read()==2 then
+  dofile("/KuMir/bin/kumir-highgrade.lua");
+elseif term.read()==3 then
+  dofile("/KuMir/bin/kumir-ide.lua");
+elseid term.read()==4 then
+  dofile("/KuMir/bin/kumir-teacher.lua");
+else
+  return
+end
