@@ -46,7 +46,7 @@ elseif term.read()==2 then
   dofile("/KuMir/bin/kumir-highgrade.lua");
 elseif term.read()==3 then
   dofile("/KuMir/bin/kumir-ide.lua");
-elseid term.read()==4 then
+elseif term.read()==4 then
   dofile("/KuMir/bin/kumir-teacher.lua");
 else
   return
