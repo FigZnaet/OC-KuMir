@@ -36,14 +36,15 @@ gpu.setBackground(0xFFFFFF);
 gpu.setForeground(0x000000);
 term.write("\n0.) Выход\n\n");
 
-if term.read()==1 then
-  dofile("/KuMir/bin/kumir-classic.lua");
-elseif term.read()==2 then
-  dofile("/KuMir/bin/kumir-highgrade.lua");
-elseif term.read()==3 then
-  dofile("/KuMir/bin/kumir-ide.lua");
-elseif term.read()==4 then
-  dofile("/KuMir/bin/kumir-teacher.lua");
+local i = term.read();
+if i==1 then
+  loadfile("/KuMir/bin/kumir-classic.lua");
+elseif i==2 then
+  loadfile("/KuMir/bin/kumir-highgrade.lua");
+elseif i==3 then
+  loadfile("/KuMir/bin/kumir-ide.lua");
+elseif i==4 then
+  loadfile("/KuMir/bin/kumir-teacher.lua");
 else
   return
 end
