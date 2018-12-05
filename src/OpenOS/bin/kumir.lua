@@ -34,7 +34,7 @@ gpu.setBackground(0xFF0000);
 term.write("\n4.)КуМир для учителей");
 gpu.setBackground(0xFFFFFF);
 gpu.setForeground(0x000000);
-term.write("\n0.) Выход");
+term.write("\n0.) Выход\n\n");
 
 if term.read()==1 then
   dofile("/KuMir/bin/kumir-classic.lua");
