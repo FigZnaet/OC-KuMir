@@ -38,7 +38,7 @@ for key, value in pairs(files) do
   elseif fs.exists(value) then
     fs.remove(value);
   end
-  loadfile("/bin/wget.lua")(url..value,value,"-f");
+  loadfile("/bin/wget.lua")(url..value,value,"-fq");
 end
 
 term.write("\n\nУстанавливаю справку...\n\n");
@@ -49,7 +49,7 @@ for key, value in pairs(tutorials) do
   elseif fs.exists(value) then
     fs.remove(value);
   end
-  loadfile("/bin/wget.lua")(url..value,value,"-f");
+  loadfile("/bin/wget.lua")(url..value,value,"-fq");
 end
 
 term.write("\n\nУстанавливаю примеры...\n\n");
@@ -60,5 +60,5 @@ for key, value in pairs(examples) do
   elseif fs.exists(value) then
     fs.remove(value);
   end
-  loadfile("/bin/wget.lua")(url..value,value,"-f");
+  loadfile("/bin/wget.lua")(url..value,value,"-fq");
 end
