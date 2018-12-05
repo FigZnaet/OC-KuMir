@@ -24,20 +24,15 @@ term.write("Выберите версию КуМир\'а для запуска:"
 
 gpu.setBackground(0x000099);
 gpu.setForeground(0xFFFF00);
-gpu.set(0, 0, w, h, " ");
 term.write("\n1.)КуМир-Стандарт");
 gpu.setBackground(0xFF4C4C);
-gpu.set(0, 0, w, h, " ");
 term.write("\n2.)КуМир для Старшеклассников");
 gpu.setBackground(0x006600);
-gpu.set(0, 0, w, h, " ");
 term.write("\n3.)КуМир-Про");
 gpu.setBackground(0xFF0000);
-gpu.set(0, 0, w, h, " ");
 term.write("\n4.)КуМир для учителей");
 gpu.setBackground(0xFFFFFF);
 gpu.setForeground(0x000000);
-gpu.set(0, 0, w, h, " ");
 term.write("\n0.) Выход");
 
 if term.read()==1 then
