@@ -18,6 +18,11 @@ local files = {
   drawerLib = "/lib/KDrawer.lua",
   painterLib = "/lib/KPainter.lua",
   turnerLib = "/lib/KTurner.lua",
+  kumirS = "/KuMir/bin/kumir-standard.lua",
+  kumirI = "/KuMir/bin/kumir-ide.lua",
+  kumirH = "/KuMir/bin/kumir-highgrade.lua",
+  kumirT = "/KuMir/bin/kumir-teacher.lua",
+  compiler = "/KuMir/bin/compiler.lua",
 }
 local tutorials = {
   firstLaunch = "/KuMir/tutorials/FirstLaunch.txt",
