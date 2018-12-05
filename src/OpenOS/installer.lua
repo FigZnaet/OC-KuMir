@@ -30,7 +30,30 @@ local examples = {
   frF = "/KuMir/examples/robot/FirstEx.fl"
 };
 
-for i, value in ipairs(files) do
+term.write("\n\nУстанавливаю Систему программирования КуМир...\n\n");
+for key, value in pairs(files) do
+  term.write(url..value.." -> "..value);
+  if not fs.exists(fs.path(value)) or not fs.isDirectory(fs.path(value)) then
+    fs.makeDirectory(fs.path(value));
+  elseif fs.exists(value) then
+    fs.remove(value);
+  end
+  loadfile("/bin/wget.lua")(url..value,value,"-f");
+end
+
+term.write("\n\nУстанавливаю справку...\n\n");
+for key, value in pairs(tutorials) do
+  term.write(url..value.." -> "..value);
+  if not fs.exists(fs.path(value)) or not fs.isDirectory(fs.path(value)) then
+    fs.makeDirectory(fs.path(value));
+  elseif fs.exists(value) then
+    fs.remove(value);
+  end
+  loadfile("/bin/wget.lua")(url..value,value,"-f");
+end
+
+term.write("\n\nУстанавливаю примеры...\n\n");
+for key, value in pairs(examples) do
   term.write(url..value.." -> "..value);
   if not fs.exists(fs.path(value)) or not fs.isDirectory(fs.path(value)) then
     fs.makeDirectory(fs.path(value));
