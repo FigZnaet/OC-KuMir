@@ -18,11 +18,13 @@ local files = {
   drawerLib = "/lib/KDrawer.lua",
   painterLib = "/lib/KPainter.lua",
   turnerLib = "/lib/KTurner.lua",
-  kumirS = "/KuMir/bin/kumir-classic.lua",
-  kumirI = "/KuMir/bin/kumir-ide.lua",
-  kumirH = "/KuMir/bin/kumir-highgrade.lua",
-  kumirT = "/KuMir/bin/kumir-teacher.lua",
+  kumirS = "/bin/kumir/kumir-classic.lua",
+  kumirI = "/bin/kumir/kumir-ide.lua",
+  kumirH = "/bin/kumir/kumir-highgrade.lua",
+  kumirT = "/bin/kumir/kumir-teacher.lua",
   compiler = "/KuMir/bin/compiler.lua",
+  lexer = "/KuMir/bin/lexer.lua",
+  parser = "/KuMir/bin/parser.lua",
 }
 local tutorials = {
   firstLaunch = "/KuMir/tutorials/FirstLaunch.txt",
