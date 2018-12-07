@@ -10,7 +10,6 @@ term.write("\nЗапускаю установщик КуМир...\n");
 
 local url = "https://raw.githubusercontent.com/Vladg24YT/OC-KuMir/master/src/OpenOS";
 local files = {
-  kumir = "/bin/kumir.lua",
   config = "/KuMir/version.cfg",
   defaultLib = "/lib/KDefault.lua",
   robotLib = "/lib/KRobot.lua",
@@ -18,10 +17,10 @@ local files = {
   drawerLib = "/lib/KDrawer.lua",
   painterLib = "/lib/KPainter.lua",
   turnerLib = "/lib/KTurner.lua",
-  kumirS = "/bin/KumirApp/kumir-classic.lua",
-  kumirI = "/bin/KumirApp/kumir-ide.lua",
-  kumirH = "/bin/KumirApp/kumir-highgrade.lua",
-  kumirT = "/bin/KumirApp/kumir-teacher.lua",
+  kumirS = "/bin/kumir-classic.lua",
+  kumirI = "/bin/kumir-ide.lua",
+  kumirH = "/bin/kumir-highgrade.lua",
+  kumirT = "/bin/kumir-teacher.lua",
   compiler = "/KuMir/bin/compiler.lua",
   lexer = "/KuMir/bin/lexer.lua",
   parser = "/KuMir/bin/parser.lua",
