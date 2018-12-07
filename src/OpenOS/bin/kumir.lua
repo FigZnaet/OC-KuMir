@@ -38,13 +38,13 @@ term.write("\n0.) Выход\n\n");
 
 local i = term.read();
 if i==1 then
-  loadfile("/kumir/kumir-classic.lua");
+  loadfile("/KumirApp/kumir-classic.lua");
 elseif i==2 then
-  loadfile("/kumir/kumir-highgrade.lua");
+  loadfile("/KumirApp/kumir-highgrade.lua");
 elseif i==3 then
-  loadfile("/kumir/kumir-ide.lua");
+  loadfile("/KumirApp/kumir-ide.lua");
 elseif i==4 then
-  loadfile("/kumir/kumir-teacher.lua");
+  loadfile("/KumirApp/kumir-teacher.lua");
 else
   return
 end
