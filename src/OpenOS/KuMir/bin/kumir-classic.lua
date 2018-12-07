@@ -11,6 +11,7 @@ gpu.set(4, 3, "00  00");
 gpu.set(4, 4, "00000");
 gpu.set(4, 5, "000000");
 gpu.set(4, 6, "00  00");
+os.sleep(10);
 gpu.setBackground(0x000000);
 gpu.setForeground(0xFFFFFF);
 gpu.setResolution(w,h);
