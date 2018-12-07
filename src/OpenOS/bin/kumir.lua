@@ -36,7 +36,7 @@ gpu.setBackground(0xFFFFFF);
 gpu.setForeground(0x000000);
 term.write("\n0.) Выход\n\n");
 
-local i = term.read();
+local i = io.read();
 if i=="1" then
   loadfile("/KumirApp/kumir-classic.lua");
 elseif i=="2" then
