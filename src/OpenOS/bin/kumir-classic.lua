@@ -16,5 +16,12 @@ gpu.setForeground(0xFFFFFF);
 gpu.setResolution(w,h);
 gpu.fill(1, 1, w, h, " ");
 --КуМир-Стандарт
-local gui = require("gui")
-local context = require("context")
+local window = require("GWindow")
+local topPanel, viewer, helper, console, main = require("GPanel")
+local editor = require("GScrollPanel")
+
+window.new("Кумир-Стандарт v0.1")
+main.new()
+main.setBounds()
+topPanel.new()
+topPanel.setBounds()
