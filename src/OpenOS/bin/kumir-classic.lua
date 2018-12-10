@@ -10,12 +10,12 @@ gpu.set(4, 3, "00  00");
 gpu.set(4, 4, "00000");
 gpu.set(4, 5, "000000");
 gpu.set(4, 6, "00  00");
-os.sleep(5);
+os.sleep(10);
 gpu.setBackground(0x000000);
 gpu.setForeground(0xFFFFFF);
 gpu.setResolution(w,h);
 gpu.fill(1, 1, w, h, " ");
---КуМир-Стандарт
+--[[КуМир-Стандарт
 local window = require("GWindow")
 local topPanel, viewer, helper, console, main = require("GPanel")
 local editor = require("GScrollPanel")
@@ -24,4 +24,4 @@ window.new("Кумир-Стандарт v0.1")
 main.new()
 main.setBounds()
 topPanel.new()
-topPanel.setBounds()
+topPanel.setBounds()]]
