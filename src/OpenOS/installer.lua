@@ -22,8 +22,6 @@ local files = {
   kumirH = "/bin/kumir-highgrade.lua",
   kumirT = "/bin/kumir-teacher.lua",
   compiler = "/KuMir/bin/compiler.lua",
-  lexer = "/KuMir/bin/lexer.lua",
-  parser = "/KuMir/bin/parser.lua",
 }
 local tutorials = {
   firstLaunch = "/KuMir/tutorials/FirstLaunch.txt",
@@ -68,3 +66,4 @@ for key, value in pairs(examples) do
   end
   loadfile("/bin/wget.lua")(url..value,value,"-fq");
 end
+print("\nУстановка успешно завершена. Для запуска КуМира используйте команду kumir-classic")
